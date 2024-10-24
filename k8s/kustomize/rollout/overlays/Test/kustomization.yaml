@@ -9,11 +9,25 @@ patches:
       kind: Deployment
       name: octopetshop-web-deployment
     path: octopetshop-web-deployment.yaml
-  - target:
-      kind: Service
-      name: web-loadbalancer
-    path: octopetshop-loadbalancer.yaml
+  - target: 
+      kind: Ingress
+      name: octopetshop-ingress
+    path: octopetshop-ingress.yaml
   - target:
       kind: Service
       name: octopetshop-web-cluster-ip-service
     path: octopetshop-web-cluster-ip-service.yaml
+
+images:
+- name: octopussamples/octopetshop-database
+  newName: harrisonmeister/cf-octopetshop-database
+  newTag: 2024.207.20.0912
+- name: octopussamples/octopetshop-productservice
+  newName: harrisonmeister/cf-octopetshop-productservice
+  newTag: 2024.207.20.0912
+- name: octopussamples/octopetshop-shoppingcartservice
+  newName: harrisonmeister/cf-octopetshop-shoppingcartservice
+  newTag: 2024.207.20.0912
+- name: octopussamples/octopetshop-web
+  newName: harrisonmeister/cf-octopetshop-web
+  newTag: 2024.207.20.0912
