@@ -20,14 +20,14 @@ patches:
 
 # images:
 # - name: octopussamples/octopetshop-database
-#   newName: harrisonmeister/cf-octopetshop-database
+#   newName: robpearson/cf-octopetshop-database
 #   newTag: 2024.285.22.3737
 # - name: octopussamples/octopetshop-productservice
-#   newName: harrisonmeister/cf-octopetshop-productservice
+#   newName: robpearson/cf-octopetshop-productservice
 #   newTag: 2024.285.22.3737
 # - name: octopussamples/octopetshop-shoppingcartservice
-#   newName: harrisonmeister/cf-octopetshop-shoppingcartservice
+#   newName: robpearson/cf-octopetshop-shoppingcartservice
 #   newTag: 2024.285.22.3737
 # - name: octopussamples/octopetshop-web
-#   newName: harrisonmeister/cf-octopetshop-web
+#   newName: robpearson/cf-octopetshop-web
 #   newTag: 2024.285.22.3737
